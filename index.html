@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev.Portfolio — Desenvolvedor em Formação</title>
+    <meta name="description" content="Portfólio profissional de um estudante de desenvolvimento de sistemas do 3º ano do ensino médio.">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <button class="logo" onclick="scrollToTop()">
+                <span class="logo-text">&lt;Dev /&gt;</span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#habilidades" class="nav-link">Habilidades</a>
+                <a href="#projetos" class="nav-link">Projetos</a>
+                <a href="#formacao" class="nav-link">Formação</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </div>
+            <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <canvas id="particleCanvas" class="particle-canvas"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="section-label">// desenvolvedor em formação \\</div>
+                <h1 class="hero-title">Olá, eu sou <span class="cyan-text">Eduardo Jesus</span></h1>
+                <h2 class="hero-subtitle" id="typewriter">Desenvolvedor fullstep </h2>
+                <p class="hero-description">
+                    Sou desenvolvedor full stack, com foco na criação de soluções completas, unindo front-end e back-end com organização, clareza e funcionalidade. Tenho experiência com HTML, CSS, JavaScript, Python e lógica de programação, sempre buscando desenvolver aplicações práticas, bem estruturadas e voltadas para uma boa experiência do usuário.
+Meu objetivo profissional é crescer de forma consistente na área de tecnologia, ampliando minhas habilidades técnicas e contribuindo com projetos reais, desenvolvendo sistemas cada vez mais seguros, eficientes e escaláveis.
+Tenho grande interesse na área de desenvolvimento, principalmente na construção de interfaces organizadas, sistemas funcionais e no aprendizado contínuo de novas tecnologias. Busco oportunidades que me desafiem, permitam evolução constante e colaboração com equipes.
+Possuo disponibilidade para aprender, colaborar e evoluir profissionalmente, com dedicação, responsabilidade e vontade de contribuir para resultados concretos dentro da empresa.
+                </p>
+            
+            <div class="hero-avatar">
+                <div class="avatar-glow"></div>
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663502510512/ciQWytDz9LcG5rZP52ySWg/avatar-placeholder-HLgw6fWg8Gp9DXhFBxKTUZ.webp" alt="Avatar">
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="scrollTo('#sobre')">
+            <span>scroll</span>
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- SOBRE SECTION -->
+    <section id="sobre" class="section sobre-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">// sobre mim  \\</div>
+                <h2>Quem é <span class="cyan-text">Eduardo Jesus?</span></h2>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>
+                        Tenho 16 anos e sou estudante do 3º ano do Ensino Médio na redi SESI, cursando o técnico em 
+                        <strong>Desenvolvimento de Sistemas no Senai</strong>. Minha jornada com programação começou por pura 
+                        curiosidade — queria entender como os sites funcionavam por dentro.
+                    </p>
+                    <p>
+                        Hoje, Eu tenho uma vida com muitas atividades, alem de gostar de programação eu gosto bastante de Jiu-JItsu, 
+                        dedico meu tempo livre a aprender novas tecnologias, construir projetos pessoais 
+                        e contribuir com a comunidade de desenvolvimento. Acredito que 
+                        <strong>a melhor forma de aprender é construindo coisas reais</strong>.
+                    </p>
+                    <p>
+                        Meu objetivo é ingressar em uma faculdade, Ainda estou escolhendo o que seguir na facudade <strong>e,
+                         futuramente, trabalhar como um fullstep, </strong> quero fazer o máximo de sites possíveis e, quero aprender mais sobre a área de Desenvolvimento de Sistemas 
+                    </p>
+                    <div class="interests">
+                        <span class="tech-tag">💻 Programação</span>
+                        <span class="tech-tag">🎮 Games</span>
+                        <span class="tech-tag">🥋 Jiu-JItsu</span>
+                        <span class="tech-tag">🎵 Música</span>
+                        <span class="tech-tag">🚀 Open Source</span>
+                        <span class="tech-tag">🤖 IA</span>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES SECTION -->
+    <section id="habilidades" class="section habilidades-section">
+        <div class="habilidades-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">// habilidades técnicas \\</div>
+                <h2>Meu <span class="cyan-text">Stack</span></h2>
+                <p class="section-subtitle">Tecnologias que estudo e aplico em projetos reais, com níveis baseados na minha experiência prática atual.</p>
+            </div>
+            <div class="skills-grid" id="skillsGrid"></div>
+            <div class="tech-icons">
+                <div class="tech-icon">
+                    <div class="tech-dot" style="background: #E34F26;"></div>
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-icon">
+                    <div class="tech-dot" style="background: #1572B6;"></div>
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-icon">
+                    <div class="tech-dot" style="background: #F7DF1E;"></div>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-icon">
+                    <div class="tech-dot" style="background: #3776AB;"></div>
+                    <span>Python</span>
+                </div>
+                <div class="tech-icon">
+                    <div class="tech-dot" style="background: #F05032;"></div>
+                    <span>Git</span>
+                </div>
+                <div class="tech-icon">
+                    <div class="tech-dot" style="background: #007ACC;"></div>
+                    <span>VS Code</span>
+                </div>
+                <div class="tech-icon">
+                    <div class="tech-dot" style="background: #F24E1E;"></div>
+                    <span>Figma</span>
+                </div>
+                <div class="tech-icon">
+                    <div class="tech-dot" style="background: #4479A1;"></div>
+                    <span>MySQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS SECTION -->
+    <section id="projetos" class="section projetos-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">// projetos</div>
+                <h2>O que eu <span class="cyan-text">construí</span></h2>
+                <p class="section-subtitle">Projetos desenvolvidos durante o curso e nas horas vagas, aplicando os conhecimentos adquiridos em situações reais.</p>
+            </div>
+            <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+    </section>
+
+    <!-- FORMAÇÃO SECTION -->
+    <section id="formacao" class="section formacao-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">// formação & trajetória</div>
+                <h2>Minha <span class="cyan-text">Jornada</span></h2>
+            </div>
+            <div class="timeline" id="timeline"></div>
+        </div>
+    </section>
+
+    <!-- CONTATO SECTION -->
+    <section id="contato" class="section contato-section">
+        <div class="contato-glow"></div>
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">// contato</div>
+                <h2>Vamos <span class="cyan-text">Conversar?</span></h2>
+                <p class="section-subtitle">Estou aberto a oportunidades de estágio, projetos colaborativos e troca de conhecimento. Manda uma mensagem!</p>
+            </div>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <div class="contact-item neo-card">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <div class="contact-label">E-mail</div>
+                            <div class="contact-value">jesusameduardo@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="contact-item neo-card">
+                        <span class="contact-icon">💼</span>
+                        <div>
+                            <div class="contact-label">LinkedIn</div>
+                            <div class="contact-value">linkedin.com/in/eduardojesus</div>
+                        </div>
+                    </div>
+                    <div class="contact-item neo-card">
+                        <span class="contact-icon">🐙</span>
+                        <div>
+                            <div class="contact-label">GitHub</div>
+                            <div class="contact-value">github.com/Eduardomazzeijesus</div>
+                        </div>
+                    </div>
+                    <div class="contact-item neo-card">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <div class="contact-label">Localização</div>
+                            <div class="contact-value">Brasil, São Paulo, Cajamar </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contato-form neo-card">
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="nome">nome</label>
+                            <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">e-mail</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Sua mensagem..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-cyan" style="width: 100%;">Enviar Mensagem →</button>
+                    </form>
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
+                        <h3>Mensagem enviada!</h3>
+                        <p>Obrigado pelo contato. Responderei em breve!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">&lt;Eduardo Jesus&gt;</div>
+            <p class="footer-text">Desenvolvido com ❤️ e muito ☕ · 2025</p>
+            <div class="footer-links">
+                <a href="https:\\github.com" class="nav-link" target="_blank">GitHub</a>
+                <a href="#" class="nav-link">LinkedIn</a>
+            </div>
+            <p class="footer-code">// construído com HTML · CSS · JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
